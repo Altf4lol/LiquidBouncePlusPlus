@@ -23,7 +23,7 @@ jobs:
           arguments: build --no-build-cache
           gradle-version: wrapper
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: LiquidBounce++ Beta
           path: build/libs/liquidbounceplusplus-0.3.1.jar
