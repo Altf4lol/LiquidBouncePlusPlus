@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Java setup
         uses: actions/setup-java@v2
         with:
@@ -23,7 +23,7 @@ jobs:
           arguments: build --no-build-cache
           gradle-version: wrapper
       - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: LiquidBounce++ Beta
           path: build/libs/liquidbounceplusplus-0.3.1.jar
