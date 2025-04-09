@@ -16,7 +16,7 @@ jobs:
           distribution: 'adopt'
           java-version: 8
           check-latest: true
-      - uses: burrunan/gradle-cache-action@v1
+      - uses: burrunan/gradle-cache-action@v2
         name: Build
         with:
           job-id: jdk8
